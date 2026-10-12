@@ -12,3 +12,14 @@ for (let index = 0; index < b.length; index++) {
 	}
 }	
 }
+function body(){
+	return (FindBody() === FindBodyOther()?
+	FindBody():
+	(FindBody().length>0?
+		FindBody():
+		(FindBodyOther().length>0?
+			FindBodyOther():
+			null
+		)
+	));
+}
